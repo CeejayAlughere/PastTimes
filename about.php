@@ -18,7 +18,7 @@ if(isset($_SESSION['user_id'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About</title>
+   <title>About Us</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    
@@ -33,25 +33,6 @@ if(isset($_SESSION['user_id'])){
    
 <?php include 'components/user_header.php'; ?>
 
-<section class="about">
-
-   <div class="row">
-
-      <div class="image">
-         <img src="images/23.png" alt="">
-      </div>
-
-      <div class="content">
-         <h3>Developer's Message:</h3>
-         <p>Hey There ! I'm GWS Tutor. </p>
-
-         <p>I would like to thank <a href="https://www.facebook.com/er.ashokbasnet" target="_blank">to everyone</a>  </p>
-         <a href="contact.php" class="btn">Contact Us</a>
-      </div>
-
-   </div>
-
-</section>
 
 <section class="reviews">
    
