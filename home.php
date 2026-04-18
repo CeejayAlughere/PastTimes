@@ -33,13 +33,6 @@ include 'components/wishlist_cart.php';
 </head>
 <body>
    
- <!-- Ganpati  -->
-<div class="header-1">
-
-    <a href="home.php" class="logo"><span> </span></a>
-                         
- <!--End Ganpati  -->
-  
 </div>
 <?php include 'components/user_header.php'; ?>
 
@@ -150,17 +143,7 @@ include 'components/wishlist_cart.php';
 
     <h1>Newsletter</h1>
     <p>Get In Touch For Latest Discounts And Updates</p>
-    <form action="contactus.php" method="post">
-
-                  
-        <input type="text" placeholder="Enter Your Name" ><br>
-                   
-                    
-        <input type="email" placeholder="Enter Your Email">
-
-        <textarea type="txt" placeholder="Enter Your Message"></textarea>
-                  
-        <input type="submit" class="btn" >
+        <button a href="contact.php" type="submit" class="btn" name="git">Get In Touch!</button>
     </form>
 
 </section>
