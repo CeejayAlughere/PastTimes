@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2025 at 08:46 AM
+-- Generation Time: Apr 19, 2026 at 11:57 AM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `shop_db`
 --
+CREATE DATABASE IF NOT EXISTS `shop_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `shop_db`;
 
 -- --------------------------------------------------------
 
@@ -61,7 +63,8 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `user_id`, `pid`, `name`, `price`, `quantity`, `image`) VALUES
-(5, 3, 4, 'trgf', 55, 1, '3d1.png');
+(5, 3, 4, 'trgf', 55, 1, '3d1.png'),
+(9, 1, 1, 'Jordan 3 Noir', 3000, 1, 'Jordan-3-pic-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -98,16 +101,6 @@ CREATE TABLE `messages` (
   `message` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `messages`
---
-
-INSERT INTO `messages` (`id`, `user_id`, `name`, `email`, `number`, `message`) VALUES
-(1, 0, 'tgh', 'fgr@gh.vbn', '54', 'f'),
-(2, 0, 'f', 'groupofwebservices@gmail.com', '54', 'df'),
-(3, 3, 'admin', 'rakeshalakh@gmail.com', '585648', 'hj'),
-(4, 3, 'admin', 'rakeshalakh@gmail.com', '254', 'hj');
-
 -- --------------------------------------------------------
 
 --
@@ -133,7 +126,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `method`, `address`, `total_products`, `total_price`, `placed_on`, `payment_status`) VALUES
-(3, 1, 'dfgsdg', '7689', 'rakesh@gmail.com', 'credit card', 'flat no. 3563, 56tgs, dvs, adf, India - 576556', 'Tata (27 x 1) - ', 27, '2024-08-17', 'completed');
+(6, 1, 'Ceejay', '0686935208', 'user1@gmail.com', 'cash on delivery', 'flat no. 01, Main Road, Johannesburg, Gauteng, South Africa - 1619', 'Jordan 4 Off White (4000 x 1) - Real Madrid 2016/2017 Long Sleeve (750 x 1) - ', 4750, '2026-04-18', 'pending');
 
 -- --------------------------------------------------------
 
@@ -170,11 +163,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `details`, `category`, `price`, `image_01`, `image_02`, `image_03`, `category_id`) VALUES
-(2, 'Amazon Echo Dot (5th Gen)', '5th (Latest) Generation Echo Dot with Alexa-The best sounding Echo Dot yet! With deeper bass and clearer vocals than all previous generations.\r\nJust ask Alexa to play music from Amazon Music, Spotify, Jio Saavn, Apple Music.(some apps may require subscription)\r\nVoice control Alexa compatible smart appliances like lights, ACs, TVs, geysers. Extend the experience to non-smart appliances using smart plugs (to be purchased separately)', '', 5499, '525.png', '527.png', '523.png', NULL),
-(3, 'Amazon Echo Show 8 ', 'Echo Show 8 (2nd Gen) with Alexa is an upgrade of our best-selling smart speaker with screen and comes with an improved 13 MP camera which you can use to make video calls to contacts having the Alexa app or Echo Show devices. You can control Echo Show 8 using only your voice. Alexa speaks English and Hindi.\r\nHands-free music control: Stream millions of songs in your favorite language : Stream millions of songs in your favorite language', '', 13994, '1016.png', '529.png', '528.png', NULL),
-(4, 'trgf', 'rfgdhy', '', 55, '3d1.png', '3d2.png', 'a1.png', 2),
-(6, 'admin', 'ef4', 'Electronics', 45, '51.png', 'a3.png', 'a22.png', NULL),
-(7, 'Rin', 'ghjkl', '', 123, 'Screenshot 2024-06-01 170200.png', 'gws4.png', 'Screenshot 2024-06-01 162246.png', NULL);
+(1, 'Jordan 3 Noir', 'Jordan 3 Noir \r\nGreat Condition\r\nSize 10 but fits Size 9 as well doesn&#39;t fit too big hence reselling.\r\nCall +27 65 233 7771 for more info', '', 3000, 'Jordan-3-pic-1.jpg', 'Jordan-3-pic-2.jpg', 'Jordan-3-pic-1.jpg', NULL),
+(2, 'Balenciaga Flared Jeans', 'Reselling, need more space in my closet, Call or Text +27 78 909 1864, serious buyers only!', '', 2400, 'Jeans-pic-1.jpeg', 'Jeans-pic-2.jpeg', 'Jeans-pic-1.jpeg', NULL),
+(3, 'Jordan 4 Off White', 'Older brother left the country and these shoes behind, he said i can resell them lol, comes with original box size 9.', '', 4000, 'Jordan-4-pic-1.jpeg', 'Jordan-4-pic-2.jpeg', 'Jordan-4-pic-1.jpeg', NULL),
+(9, 'Vetements Zurich Hoodie', 'oversized medium size hoodie fits large too, hardly worn, great condition', '', 800, 'vetements-hoodie-pic-1.jpeg', 'vetements-hoodie-pic-2.jpeg', 'vetements-hoodie-pic-3.jpeg', NULL),
+(10, 'Real Madrid 2016/2017 Long Sleeve', 'Real Madrid 2016/2017 Long Sleeve, Ronaldo num 7 on the back, medium size, barely worn, like new!', '', 750, 'football-shirt-pic-1.jpeg', 'football-shirt-pic-2.jpeg', 'football-shirt-pic-3.jpeg', NULL);
 
 -- --------------------------------------------------------
 
@@ -194,9 +187,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Rakesh', 'rakesh@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220'),
-(2, 'Rk', 'rk@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220'),
-(3, 'admin', 'rakeshalakh@gmail.com', '8cb2237d0679ca88db6464eac60da96345513964');
+(1, 'Ceejay', 'user1@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -212,6 +203,13 @@ CREATE TABLE `wishlist` (
   `price` int(100) NOT NULL,
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+INSERT INTO `wishlist` (`id`, `user_id`, `pid`, `name`, `price`, `image`) VALUES
+(4, 4, 2, 'Balenciaga Flared Jeans', 1000, 'Jeans-pic-1.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -287,7 +285,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -305,7 +303,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -317,19 +315,19 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
