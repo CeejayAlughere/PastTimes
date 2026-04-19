@@ -7,7 +7,7 @@
          <a href="home.php"> <i class=""></i> Home</a>
          <a href="about.php"> <i class=""></i> About Us</a>
          <a href="shop.php"> <i class=""></i> Shop</a>
-         <a href="contact.php"> <i class=""></i> Contact</a>
+         <a href="contact.php"> <i class=""></i> Contact Us</a>
       </div>
 
       <div class="box">

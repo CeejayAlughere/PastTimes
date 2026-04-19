@@ -286,43 +286,6 @@ section{
 .swiper-pagination-bullet-active{
    background-color: #f5deb3;
 }
-
-.category .slide{
-   margin-bottom: 5rem;
-   box-shadow: var(--box-shadow);
-   /* border:; */
-   text-align: center;
-   padding:2rem;
-      background: linear-gradient(180deg, #6B8A7A, #254336);
-   border-radius: 10rem;
-}
-
-.category .slide:hover{
-   background-color: var(--black);
-}
-
-.category .slide:hover img{
-   filter:invert();
-}
-
-.category .slide:hover h3{
-   color:var(--white);
-}
-
-.category .slide img{
-   height: 7rem;
-   width: 100%;
-   object-fit: contain;
-   margin-bottom: 1rem;
-   user-select: none;
-}
-
-.category .slide h3{
-   font-size: 2rem;
-   color: #f5deb3;
-   user-select: none;
-}
-
 .home-products .slide{
    position: relative;
    padding:2rem;
