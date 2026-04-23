@@ -139,14 +139,11 @@ include 'components/wishlist_cart.php';
 
 <!-- newsletter section starts  -->
 
-<!-- <section class="newsletter" id="newsletter">
-
+<section class="newsletter" id="newsletter">
     <h1>Newsletter</h1>
     <p>Get In Touch For Latest Discounts And Updates</p>
-        <button a href="contact.php" type="submit" class="btn" name="git">Get In Touch!</button>
-    </form>
-
-</section> -->
+    <a href="contact.php" class="btn">Get In Touch!</a>
+</section>
 
 <!-- newsletter section ends -->
 
