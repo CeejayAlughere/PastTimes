@@ -41,7 +41,7 @@ if(isset($_POST['add_product'])){
    $select_products->execute([$name]);
 
    if($select_products->rowCount() > 0){
-      $message[] = 'product name already exist!';
+      $message[] = 'Product name already exists!';
    }else{
 
       $insert_products = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03) VALUES(?,?,?,?,?,?)");
@@ -49,12 +49,12 @@ if(isset($_POST['add_product'])){
 
       if($insert_products){
          if($image_size_01 > 2000000 OR $image_size_02 > 2000000 OR $image_size_03 > 2000000){
-            $message[] = 'image size is too large!';
+            $message[] = 'Image size is too large!';
          }else{
             move_uploaded_file($image_tmp_name_01, $image_folder_01);
             move_uploaded_file($image_tmp_name_02, $image_folder_02);
             move_uploaded_file($image_tmp_name_03, $image_folder_03);
-            $message[] = 'new product added!';
+            $message[] = 'New product added!';
          }
 
       }
@@ -141,7 +141,7 @@ if(isset($_GET['delete'])){
 
 <section class="show-products">
 
-   <h1 class="heading">Products Added.</h1>
+   <h1 class="heading">Products Added</h1>
 
    <div class="box-container">
 
@@ -157,14 +157,14 @@ if(isset($_GET['delete'])){
       <div class="price"> R <span><?= $fetch_products['price']; ?></span></div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">
-         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
-         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">Update</a>
+         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Delete this product?');">Delete</a>
       </div>
    </div>
    <?php
          }
       }else{
-         echo '<p class="empty">no products added yet!</p>';
+         echo '<p class="empty">No products added yet!</p>';
       }
    ?>
    
