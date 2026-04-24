@@ -149,42 +149,6 @@ include 'components/wishlist_cart.php';
 
 
 
- <!-- deal section starts  -->
-
-<section class="deal" id="deal">
-
-<h1 class="heading"> <span> BEST DEALS </span> </h1>
-
-
-<div class="icons-container">
-
-
-    <div class="icons">
-        <i class="fa fa-shipping-fast fa-5"></i> 
-        <h3>Fast Delivery</h3>
-        <p>Five Star Rating </p>
-
-    </div>
-
-    <div class="icons">
-        <i class="fa fa-camera-retro fa-5x"></i> 
-        <h3>Easy to use</h3>
-        <p>Simple</p>
-
-    </div><div class="icons">
-        <i class="fa fa-comment fa-5x"></i> 
-        <h3>Chat with us</h3>
-        <p>Connect</p>
-
-    </div>
-   
-</div>
-
-</section>
-
-<!-- deal section ends -->
-
-
 
 
 

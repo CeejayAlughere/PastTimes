@@ -35,6 +35,57 @@ if (isset($_SESSION['user_id'])) {
 
    <?php include 'components/user_header.php'; ?>
 
+   <!-- About Us Section -->
+<section class="about">
+   <h1 class="heading">About Us</h1>
+   <div class="row">
+      <div class="image">
+         <img src="images\about-img.png" alt="About PastTimes">
+      </div>
+      <div class="content">
+         <h3>Our Story</h3>
+         <p>PastTimes was born from a simple idea — that great fashion shouldn't cost the earth, literally or financially. We started as a small collective of second-hand fashion lovers in South Africa who believed that every piece of clothing deserves a second life.</p>
+         <p>Today, we connect buyers and sellers across the country, making sustainable fashion accessible to everyone. Whether you're hunting for a retro gem, clearing out your wardrobe or even reselling, PastTimes is your trusted marketplace.</p>
+         <a href="shop.php" class="btn" style="display:inline-block; width:auto;">Shop Now</a>
+      </div>
+   </div>
+</section>
+
+ <!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+<h1 class="heading"> <span> BEST DEALS </span> </h1>
+
+
+<div class="icons-container">
+
+
+    <div class="icons">
+        <i class="fa fa-shipping-fast fa-5"></i> 
+        <h3>Fast Delivery</h3>
+        <p>Five Star Rating </p>
+
+    </div>
+
+    <div class="icons">
+        <i class="fa fa-camera-retro fa-5x"></i> 
+        <h3>Easy to use</h3>
+        <p>Simple</p>
+
+    </div><div class="icons">
+        <i class="fa fa-comment fa-5x"></i> 
+        <h3>Chat with us</h3>
+        <p>Connect</p>
+
+    </div>
+   
+</div>
+
+</section>
+
+<!-- deal section ends -->
+
 
    <section class="reviews">
 
