@@ -54,7 +54,7 @@ if(!isset($admin_id)){
          ?>
          <h3><span> R </span><?= $total_pendings; ?><span></span></h3>
          <p>Total pendings</p>
-         <a href="placed_orders.php" class="btn">See Orders.</a>
+         <a href="placed_orders.php" class="btn">See Orders</a>
       </div>
 
       <div class="box">
@@ -80,8 +80,8 @@ if(!isset($admin_id)){
             $number_of_orders = $select_orders->rowCount()
          ?>
          <h3><?= $number_of_orders; ?></h3>
-         <p>Orders Placed.</p>
-         <a href="placed_orders.php" class="btn">See orders.</a>
+         <p>Orders Placed</p>
+         <a href="placed_orders.php" class="btn">See orders</a>
       </div>
 
       <div class="box">
@@ -102,7 +102,7 @@ if(!isset($admin_id)){
             $number_of_users = $select_users->rowCount()
          ?>
          <h3><?= $number_of_users; ?></h3>
-         <p>Normal users</p>
+         <p>Normal Users</p>
          <a href="users_accounts.php" class="btn">See Users</a>
       </div>
 
@@ -113,8 +113,8 @@ if(!isset($admin_id)){
             $number_of_admins = $select_admins->rowCount()
          ?>
          <h3><?= $number_of_admins; ?></h3>
-         <p>Admin users</p>
-         <a href="admin_accounts.php" class="btn">See admins</a>
+         <p>Admin Users</p>
+         <a href="admin_accounts.php" class="btn">See Admins</a>
       </div>
 
       <div class="box">
@@ -124,8 +124,8 @@ if(!isset($admin_id)){
             $number_of_messages = $select_messages->rowCount()
          ?>
          <h3><?= $number_of_messages; ?></h3>
-         <p>New messages</p>
-         <a href="messages.php" class="btn">See messages</a>
+         <p>New Messages</p>
+         <a href="messages.php" class="btn">See Messages</a>
       </div>
 
    </div>

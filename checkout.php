@@ -37,9 +37,9 @@ if(isset($_POST['order'])){
       $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
       $delete_cart->execute([$user_id]);
 
-      $message[] = 'order placed successfully!';
+      $message[] = 'Your order placed successfully!';
    }else{
-      $message[] = 'your cart is empty';
+      $message[] = 'Your cart is empty';
    }
 
 }
@@ -52,7 +52,7 @@ if(isset($_POST['order'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>checkout</title>
+   <title>Checkout</title>
    
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -95,7 +95,7 @@ if(isset($_POST['order'])){
          <div class="grand-total">Grand Total : <span> R <?= $grand_total; ?></span></div>
       </div>
 
-      <h3>Place Your Orders</h3>
+      <h3>Place Your Order</h3>
 
       <div class="flex">
          <div class="inputBox">
@@ -130,7 +130,7 @@ if(isset($_POST['order'])){
             <input type="text" name="city" placeholder="Johannesburg" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>Province:</span>
+            <span>Province :</span>
             <input type="text" name="state" placeholder="Gauteng" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">

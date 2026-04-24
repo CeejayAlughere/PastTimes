@@ -125,7 +125,7 @@ include 'components/wishlist_cart.php';
    <?php
       }
    }else{
-      echo '<p class="empty">no products added yet!</p>';
+      echo '<p class="empty">No products added yet!</p>';
    }
    ?>
 

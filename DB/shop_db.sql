@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2026 at 11:57 AM
+-- Generation Time: Apr 23, 2026 at 07:51 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `shop_db`
 --
-CREATE DATABASE IF NOT EXISTS `shop_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `shop_db`;
 
 -- --------------------------------------------------------
 
@@ -58,14 +56,6 @@ CREATE TABLE `cart` (
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `user_id`, `pid`, `name`, `price`, `quantity`, `image`) VALUES
-(5, 3, 4, 'trgf', 55, 1, '3d1.png'),
-(9, 1, 1, 'Jordan 3 Noir', 3000, 1, 'Jordan-3-pic-1.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -101,6 +91,13 @@ CREATE TABLE `messages` (
   `message` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`id`, `user_id`, `name`, `email`, `number`, `message`) VALUES
+(5, 1, 'User', 'user1@gmail.com', '0123456789', 'theyungwatergun');
+
 -- --------------------------------------------------------
 
 --
@@ -126,7 +123,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `method`, `address`, `total_products`, `total_price`, `placed_on`, `payment_status`) VALUES
-(6, 1, 'Ceejay', '0686935208', 'user1@gmail.com', 'cash on delivery', 'flat no. 01, Main Road, Johannesburg, Gauteng, South Africa - 1619', 'Jordan 4 Off White (4000 x 1) - Real Madrid 2016/2017 Long Sleeve (750 x 1) - ', 4750, '2026-04-18', 'pending');
+(6, 1, 'Ceejay', '0686935208', 'user1@gmail.com', 'cash on delivery', 'flat no. 01, Main Road, Johannesburg, Gauteng, South Africa - 1619', 'Jordan 4 Off White (4000 x 1) - Real Madrid 2016/2017 Long Sleeve (750 x 1) - ', 4750, '2026-04-18', 'completed');
 
 -- --------------------------------------------------------
 
@@ -167,7 +164,12 @@ INSERT INTO `products` (`id`, `name`, `details`, `category`, `price`, `image_01`
 (2, 'Balenciaga Flared Jeans', 'Reselling, need more space in my closet, Call or Text +27 78 909 1864, serious buyers only!', '', 2400, 'Jeans-pic-1.jpeg', 'Jeans-pic-2.jpeg', 'Jeans-pic-1.jpeg', NULL),
 (3, 'Jordan 4 Off White', 'Older brother left the country and these shoes behind, he said i can resell them lol, comes with original box size 9.', '', 4000, 'Jordan-4-pic-1.jpeg', 'Jordan-4-pic-2.jpeg', 'Jordan-4-pic-1.jpeg', NULL),
 (9, 'Vetements Zurich Hoodie', 'oversized medium size hoodie fits large too, hardly worn, great condition', '', 800, 'vetements-hoodie-pic-1.jpeg', 'vetements-hoodie-pic-2.jpeg', 'vetements-hoodie-pic-3.jpeg', NULL),
-(10, 'Real Madrid 2016/2017 Long Sleeve', 'Real Madrid 2016/2017 Long Sleeve, Ronaldo num 7 on the back, medium size, barely worn, like new!', '', 750, 'football-shirt-pic-1.jpeg', 'football-shirt-pic-2.jpeg', 'football-shirt-pic-3.jpeg', NULL);
+(10, 'Real Madrid 2016/2017 Long Sleeve', 'Real Madrid 2016/2017 Long Sleeve, Ronaldo num 7 on the back, medium size, barely worn, like new!', '', 750, 'football-shirt-pic-1.jpeg', 'football-shirt-pic-2.jpeg', 'football-shirt-pic-3.jpeg', NULL),
+(11, 'Nike LeBron 23 &#34;Miami Twice&#34;', 'Lebron Basketball shoes, Brand new comes with original box, size 10', '', 3700, 'nike-lebron-23-pic-1.png', 'nike-lebron-23-pic-2.png', 'nike-lebron-23-pic-3.png', NULL),
+(12, 'Supreme Hoodie - Medium', 'Barely worn, no fading or discoloring, like new!', '', 1500, 'red-supreme-pic-1.png', 'red-supreme-pic-2.jpg', 'red-supreme-pic-3.jpg', NULL),
+(13, 'Chrome Hearts Long Sleeve Shirt', 'still new, comes with tags, bought abroad, never worn, medium sized', '', 1200, 'chrome-hearts-shirt-pic-1.jpg', 'chrome-hearts-shirt-pic-2.jpg', 'chrome-hearts-shirt-pic-3.jpg', NULL),
+(14, 'Bape Hoodie', 'Slightly used, zero wear/tear, medium sized', '', 1000, 'bap-hoodie-pic-1.jpeg', 'bap-hoodie-pic-2.jpeg', 'bap-hoodie-pic-3.jpeg', NULL),
+(15, 'Sp5der X Adidas Superstar', 'brand new, comes with all laces and original shoe box', '', 2500, 'Sp5derXAdidas-pic-1.jpg', 'Sp5derXAdidas-pic-2.jpg', 'Sp5derXAdidas-pic-3.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -187,7 +189,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Ceejay', 'user1@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
+(1, 'Ceejay', 'user1@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef'),
+(5, 'ball', 'ball@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -285,7 +288,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -297,7 +300,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -315,13 +318,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `wishlist`

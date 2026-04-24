@@ -33,7 +33,7 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Users accounts</title>
+   <title>Users Accounts</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -46,7 +46,7 @@ if(isset($_GET['delete'])){
 
 <section class="accounts">
 
-   <h1 class="heading">User accounts</h1>
+   <h1 class="heading">User Accounts</h1>
 
    <div class="box-container">
 
@@ -60,12 +60,12 @@ if(isset($_GET['delete'])){
       <p> User id : <span><?= $fetch_accounts['id']; ?></span> </p>
       <p> Username : <span><?= $fetch_accounts['name']; ?></span> </p>
       <p> Email : <span><?= $fetch_accounts['email']; ?></span> </p>
-      <a href="users_accounts.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('delete this account? the user related information will also be delete!')" class="delete-btn">delete</a>
+      <a href="users_accounts.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('Delete this account? the user related information will also be deleted.')" class="delete-btn">Delete</a>
    </div>
    <?php
          }
       }else{
-         echo '<p class="empty">no accounts available!</p>';
+         echo '<p class="empty">No accounts available!</p>';
       }
    ?>
 
