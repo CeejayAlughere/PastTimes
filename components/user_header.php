@@ -55,11 +55,11 @@
             <a href="user_register.php" class="option-btn">Register</a>
             <a href="user_login.php" class="option-btn">Login</a>
          </div>
-         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+         <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('Logout from the website?');">Logout</a> 
          <?php
             }else{
          ?>
-         <p>Please Login Or Register First to proceed !</p>
+         <p>Please Login Or Register first to proceed...</p>
          <div class="flex-btn">
             <a href="user_register.php" class="option-btn">Register</a>
             <a href="user_login.php" class="option-btn">Login</a>

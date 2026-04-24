@@ -8,7 +8,6 @@
    --white:#fff;
    --light-color:#666;
    --light-bg:#eee;
-   /* --border:; */
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
@@ -49,7 +48,6 @@ body{
 
 section{
    padding:2rem;
-   /* max-width: ; */
    margin:0 auto;
 }
 
