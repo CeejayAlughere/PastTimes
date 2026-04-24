@@ -22,7 +22,7 @@
          <h3>Contact Us</h3>
          <a href="tel:9800000000"><i class="fas fa-phone"></i> +27 12 345 6789</a>
          
-         <a href="#"><i class="fas fa-envelope"></i> groupofwebservices@gmail.com</a>
+         <a href="#"><i class="fas fa-envelope"></i> pasttimesservices@gmail.com</a>
          <a href="#"><i class="fas fa-map-marker-alt"></i> South Africa </a>
       </div>
 
