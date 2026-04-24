@@ -107,7 +107,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3> <a href="#" target="_blank">Thando Mkhize</a></h3>
+               <h3>Thando Mkhize</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -122,7 +122,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3><a href="#" target="_blank">Michael van der Merwe</a></h3>
+               <h3>Michael van der Merwe</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -137,7 +137,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3><a href="#" target="_blank">Kaushal Shah</a></h3>
+               <h3>Kaushal Shah</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -152,7 +152,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3><a href="#" target="_blank">Ethan Naidoo</a></h3>
+               <h3>Ethan Naidoo</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -166,7 +166,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3><a href="#" target="_blank">Ranjit Chaudhary</a></h3>
+               <h3>Ranjit Chaudhary</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -180,7 +180,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3><a href="#" target="_blank">Pranil Poudel</a></h3>
+               <h3>Pranil Poudel</h3>
             </div>
 
          </div>
