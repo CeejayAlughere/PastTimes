@@ -18,7 +18,7 @@ if(!isset($admin_id)){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dashboard</title>
+   <title>Admin Dashboard</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -53,7 +53,7 @@ if(!isset($admin_id)){
             }
          ?>
          <h3><span> R </span><?= $total_pendings; ?><span></span></h3>
-         <p>Total pendings</p>
+         <p>Total Pendings</p>
          <a href="placed_orders.php" class="btn">See Orders</a>
       </div>
 
@@ -69,8 +69,8 @@ if(!isset($admin_id)){
             }
          ?>
          <h3><span> R </span><?= $total_completes; ?><span></span></h3>
-         <p>Completed orders</p>
-         <a href="placed_orders.php" class="btn">See orders</a>
+         <p>Completed Orders</p>
+         <a href="placed_orders.php" class="btn">See Orders</a>
       </div>
 
       <div class="box">
@@ -81,7 +81,7 @@ if(!isset($admin_id)){
          ?>
          <h3><?= $number_of_orders; ?></h3>
          <p>Orders Placed</p>
-         <a href="placed_orders.php" class="btn">See orders</a>
+         <a href="placed_orders.php" class="btn">See Orders</a>
       </div>
 
       <div class="box">
@@ -91,8 +91,8 @@ if(!isset($admin_id)){
             $number_of_products = $select_products->rowCount()
          ?>
          <h3><?= $number_of_products; ?></h3>
-         <p>Products added</p>
-         <a href="products.php" class="btn">See products</a>
+         <p>Total Products</p>
+         <a href="products.php" class="btn">See Products</a>
       </div>
 
       <div class="box">

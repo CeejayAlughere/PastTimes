@@ -38,13 +38,13 @@ if(isset($_GET['delete'])){
 
 <section class="accounts">
 
-   <h1 class="heading">Admin Accounts</h1>
+   <h1 class="heading">All Admin Accounts</h1>
 
    <div class="box-container">
 
    <div class="box">
       <p>Add New Admin</p>
-      <a href="register_admin.php" class="option-btn">Register Admin</a>
+      <a href="register_admin.php" class="option-btn">Register New Admin</a>
    </div>
 
    <?php
@@ -55,9 +55,9 @@ if(isset($_GET['delete'])){
    ?>
    <div class="box">
       <p> Admin Id : <span><?= $fetch_accounts['id']; ?></span> </p>
-      <p> Admin name : <span><?= $fetch_accounts['name']; ?></span> </p>
+      <p> Admin Username : <span><?= $fetch_accounts['name']; ?></span> </p>
       <div class="flex-btn">
-         <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('delete this account?')" class="delete-btn">delete</a>
+         <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('Delete this account?')" class="delete-btn">Delete</a>
          <?php
             if($fetch_accounts['id'] == $admin_id){
                echo '<a href="update_profile.php" class="option-btn">update</a>';

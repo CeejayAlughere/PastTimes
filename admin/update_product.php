@@ -150,7 +150,7 @@ if(isset($_POST['update'])){
    <?php
          }
       }else{
-         echo '<p class="empty">no product found!</p>';
+         echo '<p class="empty">No product found!</p>';
       }
    ?>
 

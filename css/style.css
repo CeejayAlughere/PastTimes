@@ -175,7 +175,7 @@ section{
 }
 
 .header .flex .logo span{
-   color:var(--main-color);
+   color:rgba(24, 255, 143, 0.8);
 }
 
 .header .flex .navbar a{

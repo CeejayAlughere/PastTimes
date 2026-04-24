@@ -45,7 +45,7 @@ if (isset($_SESSION['user_id'])) {
       <div class="content">
          <h3>Our Story</h3>
          <p>PastTimes was born from a simple idea — that great fashion shouldn't cost the earth, literally or financially. We started as a small collective of second-hand fashion lovers in South Africa who believed that every piece of clothing deserves a second life.</p>
-         <p>Today, we connect buyers and sellers across the country, making sustainable fashion accessible to everyone. Whether you're hunting for a retro gem, clearing out your wardrobe or even reselling, PastTimes is your trusted marketplace.</p>
+         <p>Today, we connect buyers and sellers across the country, making sustainable fashion accessible to everyone. Whether you're hunting for a retro gem, clearing out your wardrobe or even reselling brand new products, PastTimes is your <i>trusted</i> marketplace.</p>
          <a href="shop.php" class="btn" style="display:inline-block; width:auto;">Shop Now</a>
       </div>
    </div>
@@ -89,7 +89,7 @@ if (isset($_SESSION['user_id'])) {
 
    <section class="reviews">
 
-      <h1 class="heading">Client's Reviews.</h1>
+      <h1 class="heading">Client's Reviews</h1>
 
       <div class="swiper reviews-slider">
 

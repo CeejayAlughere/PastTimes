@@ -87,7 +87,7 @@ if(isset($_POST['order'])){
       <?php
             }
          }else{
-            echo '<p class="empty">your cart is empty!</p>';
+            echo '<p class="empty">Your cart is empty!</p>';
          }
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
@@ -100,15 +100,15 @@ if(isset($_POST['order'])){
       <div class="flex">
          <div class="inputBox">
             <span>Your Name :</span>
-            <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
+            <input type="text" name="name" placeholder="Enter Your name" class="box" maxlength="20" required>
          </div>
          <div class="inputBox">
             <span>Your Number :</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+            <input type="number" name="number" placeholder="Enter Your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
          </div>
          <div class="inputBox">
             <span>Your Email :</span>
-            <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
+            <input type="email" name="email" placeholder="Enter Your email" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Select Payment Method :</span>
@@ -130,7 +130,7 @@ if(isset($_POST['order'])){
             <input type="text" name="city" placeholder="Johannesburg" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>Province :</span>
+            <span>State :</span>
             <input type="text" name="state" placeholder="Gauteng" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">

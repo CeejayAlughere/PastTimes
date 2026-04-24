@@ -41,7 +41,7 @@ if(isset($_POST['add_product'])){
    $select_products->execute([$name]);
 
    if($select_products->rowCount() > 0){
-      $message[] = 'Product name already exists!';
+      $message[] = 'This product name already exists!';
    }else{
 
       $insert_products = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03) VALUES(?,?,?,?,?,?)");
@@ -54,7 +54,7 @@ if(isset($_POST['add_product'])){
             move_uploaded_file($image_tmp_name_01, $image_folder_01);
             move_uploaded_file($image_tmp_name_02, $image_folder_02);
             move_uploaded_file($image_tmp_name_03, $image_folder_03);
-            $message[] = 'New product added!';
+            $message[] = 'New product has been added!';
          }
 
       }
@@ -103,7 +103,7 @@ if(isset($_GET['delete'])){
 
 <section class="add-products">
 
-   <h1 class="heading">Add Product</h1>
+   <h1 class="heading">Add A Product</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
       <div class="flex">
@@ -141,7 +141,7 @@ if(isset($_GET['delete'])){
 
 <section class="show-products">
 
-   <h1 class="heading">Products Added</h1>
+   <h1 class="heading">All Products</h1>
 
    <div class="box-container">
 
@@ -164,7 +164,7 @@ if(isset($_GET['delete'])){
    <?php
          }
       }else{
-         echo '<p class="empty">No products added yet!</p>';
+         echo '<p class="empty">No products have been added yet!</p>';
       }
    ?>
    

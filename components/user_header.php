@@ -15,7 +15,7 @@
 
    <section class="flex">
 
-      <a href="home.php" class="logo">Past<span> Times</span></a>
+      <a href="home.php" class="logo">Past<span>Times</span></a>
 
       <nav class="navbar">
          <a href="home.php">Home</a>

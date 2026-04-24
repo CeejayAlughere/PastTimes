@@ -46,7 +46,7 @@ if(isset($_GET['delete'])){
 
 <section class="accounts">
 
-   <h1 class="heading">User Accounts</h1>
+   <h1 class="heading">All User Accounts</h1>
 
    <div class="box-container">
 
@@ -65,7 +65,7 @@ if(isset($_GET['delete'])){
    <?php
          }
       }else{
-         echo '<p class="empty">No accounts available!</p>';
+         echo '<p class="empty">No user accounts available!</p>';
       }
    ?>
 
