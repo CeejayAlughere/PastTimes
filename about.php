@@ -120,7 +120,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+                  <i class="fas fa-star"></i>
                </div>
                <h3>Michael van der Merwe</h3>
             </div>
@@ -135,7 +135,6 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
                </div>
                <h3>Kaushal Shah</h3>
             </div>
@@ -166,7 +165,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3>Ranjit Chaudhary</h3>
+               <h3>Ayanda Nkosi</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -180,7 +179,7 @@ if (isset($_SESSION['user_id'])) {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                </div>
-               <h3>Pranil Poudel</h3>
+               <h3>Kayla Daniels</h3>
             </div>
 
          </div>
