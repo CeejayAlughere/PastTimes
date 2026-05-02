@@ -28,7 +28,7 @@ if(isset($_POST['update_qty'])){
    $qty = $_POST['qty'];
    $qty = filter_var($qty, FILTER_SANITIZE_STRING);
    $update_qty = $conn->prepare("UPDATE `cart` SET quantity = ? WHERE id = ?");
-   $update_qty->execute([$qty, $cart_id]);
+   // $update_qty->execute([$qty, $cart_id]);
    $message[] = 'cart quantity updated';
 }
 
@@ -74,7 +74,6 @@ if(isset($_POST['update_qty'])){
       <div class="flex">
          <div class="price"> R <?= $fetch_cart['price']; ?></div>
          <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="<?= $fetch_cart['quantity']; ?>">
-         <button type="submit" class="fas fa-edit" name="update_qty"></button>
       </div>
       <div class="sub-total"> SubTotal : <span>R<?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?></span> </div>
       <input type="submit" value="delete item" onclick="return confirm('Delete this from cart?');" class="delete-btn" name="delete">
