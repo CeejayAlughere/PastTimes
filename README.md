@@ -1,28 +1,47 @@
-Module: WEDE6021
-Part 2
-Student Name: Bongani Shikwambana (ST104440511)
-Student Name: Ceejay Alughere (ST10451570)
-
-Overview
+# PastTimes — Second-Hand Clothing Store
+ 
+**Module:** WEDE6021 | Part 2
+ 
+| Student Name | Student Number |
+|---|---|
+| Bongani Shikwambana | ST104440511 |
+| Ceejay Alughere | ST10451570 |
+ 
+---
+ 
+## Overview
+ 
 PastTimes is a web-based second-hand clothing store developed using PHP and MySQL. Our platform allows users to browse a curated collection of pre-owned fashion items, add them to a cart, and place orders. It also includes an admin panel for managing products, users, and orders.
+ 
 Our system focuses on sustainability by promoting the reuse of clothing while also demonstrating practical full-stack web development using XAMPP.
-Key Features
-
+ 
+---
+ 
+## Key Features
+ 
 Our system focuses on sustainability by promoting the reuse of clothing while also demonstrating practical full-stack web development using XAMPP.
-
-User Side
+ 
+### 👤 User Side
+ 
 Users can register and log into their accounts securely. Once logged in, they can browse available products, view detailed descriptions, select sizes, and add items to their cart. The cart system allows users to manage quantities and review their selections before placing an order. Users can also view their order history and track order status.
-
-Admin Side
+ 
+### 🛠️ Admin Side
+ 
 The admin panel allows full control over the store. Admins can add new products, update existing ones, or remove items from the store. Orders can be viewed and updated, including changing their status. The admin can also manage users and monitor activity within the system.
-
-Product Management
+ 
+### 📦 Product Management
+ 
 Each product includes a name, description, price, size, category, condition, and image. This ensures that users get complete information before making a purchase.
-
-Session Handling
+ 
+### 🔐 Session Handling
+ 
 User sessions are used to manage login states and personalize the experience, such as displaying the correct user data and maintaining cart contents.
-
-Project Structure
+ 
+---
+ 
+## Project Structure
+ 
+```
 /PastTimes
 │── /components
 │   ├── connect.php        # Database connection
@@ -41,15 +60,22 @@ Project Structure
 │── login.php              # Login page
 │── register.php           # Registration page
 │── README.md              # Documentation
-
-Installation and Setup
-First, install XAMPP and ensure Apache and MySQL are working correctly.
-Next, place our PastTimes project folder inside the htdocs directory in your XAMPP installation.
-Open the XAMPP Control Panel and start both Apache and MySQL services.
-Go to phpMyAdmin in your browser and create a new database named shop_db. Import the SQL file provided with the project to set up all required tables.
-Locate the database connection file inside the components folder (connect.php) and update it with your database name, username, and password if necessary.
-Once everything is configured, open your browser and navigate to localhost/PastTimes/home.php to run the application.
-
-Purpose of our project
+```
+ 
+---
+ 
+## Installation and Setup
+ 
+1. First, install XAMPP and ensure Apache and MySQL are working correctly.
+2. Next, place our PastTimes project folder inside the `htdocs` directory in your XAMPP installation.
+3. Open the XAMPP Control Panel and start both Apache and MySQL services.
+4. Go to phpMyAdmin in your browser and create a new database named `shop_db`. Import the SQL file provided with the project to set up all required tables.
+5. Locate the database connection file inside the components folder (`connect.php`) and update it with your database name, username, and password if necessary.
+6. Once everything is configured, open your browser and navigate to `localhost/PastTimes/home.php` to run the application.
+---
+ 
+## Purpose of Our Project
+ 
 This project was created to demonstrate the development of a dynamic e-commerce website using PHP and MySQL. It also aims to promote sustainable fashion by encouraging the buying and selling of second-hand clothing.
+ 
 It showcases key concepts such as database design, session management, CRUD operations, and user authentication.
