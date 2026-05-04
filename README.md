@@ -19,7 +19,7 @@ Our system focuses on sustainability by promoting the reuse of clothing while al
  
 ## Key Features
  
-> Our system focuses on sustainability by promoting the reuse of clothing while also demonstrating practical full-stack web development using XAMPP.
+Our system focuses on sustainability by promoting the reuse of clothing while also demonstrating practical full-stack web development using XAMPP.
  
 ### 👤 User Side
  
