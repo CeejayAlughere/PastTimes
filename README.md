@@ -1,5 +1,5 @@
 Module: WEDE6021
-Part 1 – Section 1
+Part 2
 Student Name: Bongani Shikwambana (ST104440511)
 Student Name: Ceejay Alughere (ST10451570)
 
