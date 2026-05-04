@@ -43,7 +43,6 @@ Project Structure
 │── README.md              # Documentation
 
 Installation and Setup
-
 First, install XAMPP and ensure Apache and MySQL are working correctly.
 Next, place our PastTimes project folder inside the htdocs directory in your XAMPP installation.
 Open the XAMPP Control Panel and start both Apache and MySQL services.
@@ -51,3 +50,6 @@ Go to phpMyAdmin in your browser and create a new database named shop_db. Import
 Locate the database connection file inside the components folder (connect.php) and update it with your database name, username, and password if necessary.
 Once everything is configured, open your browser and navigate to localhost/PastTimes/home.php to run the application.
 
+Purpose of our project
+This project was created to demonstrate the development of a dynamic e-commerce website using PHP and MySQL. It also aims to promote sustainable fashion by encouraging the buying and selling of second-hand clothing.
+It showcases key concepts such as database design, session management, CRUD operations, and user authentication.
